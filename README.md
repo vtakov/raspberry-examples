@@ -1,3 +1,3 @@
 # raspberry-examples 
 
-Temporary repository for different tests.
+Temporary repository for different smaples.
