@@ -14,6 +14,20 @@ gphoto2 --capture-image-and-download
 
 this command takes a photo and automatically downloads the created file to the root directory /
 
+
+ --- The -53 error
+
 If you have this error message Error (-53: 'Could not claim the USB device') unplug the camera from Raspberry and use the command
 
 sudo killall gvfs-gphoto2-volume-monitor 
+
+
+ --- To save images on camera's memory card
+
+gphoto2 --get-config capturetarget 
+
+gphoto2 --set-config capturetarget=1 
+
+to see all configuration possibilities: 
+
+gphoto2 --list-config 
