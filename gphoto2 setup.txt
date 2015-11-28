@@ -1,0 +1,19 @@
+sudo apt-get install gphoto2
+
+Now connect your camera via USB to the Raspberry and use the command
+
+lsusb
+
+to get output directly relating to your camera. Now you can control your camera with the Gphoto2 command line tool but first see if your camera it is recognized by the command
+
+gphoto2 --auto-detect
+
+if everything goes well now you can use the command
+
+gphoto2 --capture-image-and-download 
+
+this command takes a photo and automatically downloads the created file to the root directory /
+
+If you have this error message Error (-53: 'Could not claim the USB device') unplug the camera from Raspberry and use the command
+
+sudo killall gvfs-gphoto2-volume-monitor 
