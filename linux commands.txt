@@ -1,0 +1,19 @@
+lsusb -t	# USB Devices
+df -h		# Mount points and mounting disks
+
+
+# Setup Remote Desktop
+
+http://www.raspberrypiblog.com/2012/10/how-to-setup-remote-desktop-from.html
+
+1. Start up your Pi to the terminal prompt. 
+2. Type the following command 
+sudo apt-get install xrdp
+3. If promoted enter your password (the default is "raspberry")
+4. Type "Y" and press enter.
+
+This is now installing xrdp onto your Pi which is the software we are going to use for the remote desktop connection. Wait for it to complete.
+
+5. Restart your Pi. We are going to check that xrdp is going to start up automatically.
+6. When your Pi has booted to the command prompt look for [ ok ] Starting Remote Desktop Protocol server : xrdp sesman.
+This shows you that xrdp is installed and automatically starting up on start up of your Pi
